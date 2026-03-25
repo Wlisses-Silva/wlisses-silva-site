@@ -713,11 +713,154 @@ img {
 }
 
 /* ======================================
+   EXPERIÊNCIAS
+====================================== */
+.experiencias {
+    padding: var(--section-padding);
+    background: var(--bg-dark);
+    position: relative;
+}
+
+.experiencias::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+
+.timeline {
+    position: relative;
+    max-width: 780px;
+    margin: 0 auto;
+    padding-left: 32px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--primary), var(--primary-light), transparent);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -44px;
+    top: 4px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border: 3px solid var(--bg-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.85rem;
+    box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.2);
+    transition: var(--transition-smooth);
+    z-index: 1;
+}
+
+.timeline-item:hover .timeline-marker {
+    box-shadow: 0 0 0 6px rgba(15, 118, 110, 0.35);
+    transform: scale(1.08);
+}
+
+.timeline-content {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    transition: var(--transition-smooth);
+}
+
+.timeline-content:hover {
+    border-color: var(--primary);
+    background: var(--bg-card-hover);
+    box-shadow: var(--shadow-glow);
+    transform: translateX(4px);
+}
+
+.timeline-period {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    background: rgba(15, 118, 110, 0.1);
+    border: 1px solid rgba(15, 118, 110, 0.2);
+    padding: 4px 14px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.timeline-role {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.timeline-company {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 14px;
+}
+
+.timeline-company i {
+    color: var(--primary-light);
+}
+
+.timeline-content p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.timeline-tags span {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    background: rgba(15, 118, 110, 0.1);
+    border: 1px solid rgba(15, 118, 110, 0.25);
+    padding: 4px 12px;
+    border-radius: 50px;
+    letter-spacing: 0.3px;
+}
+
+/* ======================================
    ESPECIALIDADES
 ====================================== */
 .especialidades {
     padding: var(--section-padding);
-    background: var(--bg-dark);
+    background: var(--bg-section);
     position: relative;
 }
 
@@ -1329,6 +1472,21 @@ textarea {
 
     .cursos-grid {
         grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 24px;
+    }
+
+    .timeline::before {
+        left: 12px;
+    }
+
+    .timeline-marker {
+        left: -36px;
+        width: 34px;
+        height: 34px;
+        font-size: 0.75rem;
     }
 
     .contato-form-wrap {

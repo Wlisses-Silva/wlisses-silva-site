@@ -1,0 +1,22 @@
+# Robots.txt — Wlisses Silva | TST
+# Permite todos os crawlers (incluindo AI crawlers para GEO)
+
+User-agent: *
+Allow: /
+Disallow:
+
+# AI Crawlers — permitidos para citação em AI search engines (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Sitemap
+Sitemap: https://wlisses-silva-site.vercel.app/sitemap.xml

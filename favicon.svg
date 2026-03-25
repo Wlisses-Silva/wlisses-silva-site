@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Fundo escuro -->
+  <rect width="100" height="100" rx="20" fill="#0f172a"/>
+  <!-- Escudo (símbolo de segurança do trabalho) -->
+  <path d="M50 10 L80 22 L80 50 C80 67 65 80 50 88 C35 80 20 67 20 50 L20 22 Z"
+        fill="url(#g)" opacity="0.9"/>
+  <!-- Check interno -->
+  <path d="M36 50 L46 60 L64 40"
+        fill="none" stroke="#0f172a" stroke-width="5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
