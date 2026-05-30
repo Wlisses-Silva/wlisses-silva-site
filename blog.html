@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Wlisses Silva | Segurança do Trabalho e Meio Ambiente</title>
+    <meta name="description" content="Artigos, guias e novidades sobre Segurança do Trabalho, Normas Regulamentadoras (NRs), eSocial SST, CIPA e gestão de riscos ocupacionais por Wlisses Silva.">
+    <meta name="author" content="Wlisses Silva">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.wlisses-silva-site.vercel.app/blog.html">
+
+    <!-- ========== SEO: Open Graph ========== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog — Wlisses Silva | Segurança do Trabalho e Meio Ambiente">
+    <meta property="og:description" content="Artigos, guias e novidades sobre Segurança do Trabalho, Normas Regulamentadoras (NRs), eSocial SST, CIPA e gestão de riscos ocupacionais por Wlisses Silva.">
+    <meta property="og:url" content="https://www.wlisses-silva-site.vercel.app/blog.html">
+    <meta property="og:image" content="https://www.wlisses-silva-site.vercel.app/wlisses-foto.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Wlisses Silva | TST">
+
+    <!-- ========== Favicon ========== -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- ========== Fonts & Styles ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+
+    <!-- Base portfólio styles + blog specific styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body class="blog-page">
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header id="header" class="scrolled">
+        <nav class="navbar container">
+            <a class="logo" href="index.html">
+                <span class="logo-icon"><i class="fas fa-shield-alt"></i></span>
+                <span class="logo-text">Wlisses<span class="accent">Silva</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-l" href="index.html#hero">Início</a></li>
+                <li><a class="nav-l" href="index.html#sobre">Sobre</a></li>
+                <li><a class="nav-l" href="index.html#especialidades">Especialidades</a></li>
+                <li><a class="nav-l" href="index.html#experiencias">Experiências</a></li>
+                <li><a class="nav-l" href="index.html#skills">Soft Skills</a></li>
+                <li><a class="nav-l" href="index.html#faq">FAQ</a></li>
+                <li><a class="nav-l active" href="blog.html">Blog</a></li>
+                <li><a class="nav-cta" href="index.html#contato">Contato</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ========== BLOG CONTAINER (DYNAMIC) ========== -->
+    <main id="blogApp" class="container">
+        <!-- O JS injetará o conteúdo dinamicamente aqui -->
+        <div id="loadingState" class="loading-state">
+            <div class="spinner"></div>
+            <p>Carregando artigos...</p>
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon"><i class="fas fa-shield-alt"></i></span>
+                    <span class="logo-text">Wlisses<span class="accent">Silva</span></span>
+                </div>
+                <p class="footer-text">Técnico em Segurança do Trabalho e Meio Ambiente</p>
+                <div class="footer-social">
+                    <a class="social-l" href="https://www.linkedin.com/in/wlisses-silva/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-l" href="https://wa.me/5582999946448" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                    <a class="social-l" href="https://www.instagram.com/wlissesbsilva/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wlisses Silva. Todos os direitos reservados.</p>
+                <p class="footer-dev" style="margin-top:0.5rem;font-size:0.8rem;opacity:0.7;">Desenvolvido por <a class="dev-l" href="https://briows.com" target="_blank" rel="noopener" style="color:#4ade80;font-weight:600;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">BRIOWS</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a class="back-to-top" id="backToTop" href="#" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="blog.js" defer></script>
+</body>
+</html>
