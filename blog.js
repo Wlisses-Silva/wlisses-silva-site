@@ -311,8 +311,8 @@ function renderError(message) {
 // ======================================
 // APP RUN
 // ======================================
-document.addEventListener('DOMContentLoaded', initBlog);
-// If scripts load after DOMContentLoaded
-if (document.readyState === 'interactive' || document.readyState === 'complete') {
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBlog);
+} else {
     initBlog();
 }
